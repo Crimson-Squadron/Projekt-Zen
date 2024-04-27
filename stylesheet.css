@@ -378,8 +378,8 @@ body {
 
 .content.content1 {
     color: white;
-    background-color: rgb(2, 2, 89);
-    /* opacity: 0.5; */
+    background-color: rgba(2, 2, 89, 0);
+    opacity: 0.5;
 }
 
 .content.content2 {
