@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         bgVideo.src = 'videos/ptcl.mp4'
         bgVideo.style.opacity = '0.8'
       } else {
-        bgVideo.src = 'videos/The World of Tyrrell _ Low Fantasy Setting.mp4'
+        bgVideo.src = 'videos/The World of Tyrrell _ Low Fantasy Setting - Trim.mp4'
         bgVideo.style.opacity = '1'
       }
     })
