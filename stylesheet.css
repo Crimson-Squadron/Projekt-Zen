@@ -352,7 +352,6 @@ body {
     width: 100%;
     height: 100vh;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .banner-container {
@@ -363,7 +362,7 @@ body {
     height: 100vh;
     width: 100%;
     color: white;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .video-title {
@@ -382,7 +381,7 @@ body {
 
 .academy-slogan {
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
     width: 100%;
     margin: 0rem;
     padding-bottom: 0.5rem;
@@ -390,15 +389,69 @@ body {
     text-shadow: 0px 0px 3px #E1B87A;
 }
 
-.content1 {
+.about-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     font-size: 100px;
     height: 150vh;
     width: 100%;
+    gap: 3rem;
     color: white;
-    background-color: black;
+    font-size: clamp(1.5rem, 2vw, 3.3rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, #0c0c0c 6%, #0c0c0c 95%, transparent 100%);
+}
+
+.about-container-mask {
+    position: absolute;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(transparent 0%, #0c0c0c 6%, #0c0c0c 95%, transparent 100%);
+    mask-image: linear-gradient(transparent 0%, #0c0c0c 6%, #0c0c0c 95%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    filter: opacity(0.75);
+}
+
+.about-container-mask img {
+    height: 32.25rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.emblem-slogan-container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.emblem-slogan-container .academy-slogan {
+    padding-bottom: 0rem;
+    font-size: inherit;
+    color: #E1B87A;
+    text-shadow: 0px 0px 3px #E1B87A;
+}
+
+.academy-emblem {
+    height: auto;
+    width: 20rem;
+}
+
+.academy-intro {
+    margin: 0 1rem;
+    max-width: 80rem;
+    color: #E1B87A;
+    font-size: 0.55em;
+    text-align: center;
+    word-spacing: 0.3em;
+    line-height: 2rem;
+    text-shadow: 0px 0px 3px #E1B87A;
 }
 
 .content2 {
