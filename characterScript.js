@@ -17,20 +17,50 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
 
-    const checkboxes = document.querySelectorAll('input')
-    const cardContainers = document.querySelectorAll('.char-card-container')
+    var charImg = document.querySelector('.char-container img')
+    var charName = document.querySelector('.char-name h1')
+    var charDesc = document.querySelector('.char-desc p')
+    var flagImg = document.querySelector('.char-nation img')
+    var flagName = document.querySelector('.char-nation h2')
 
-    checkboxes.forEach((checkbox, index) => {
-        checkbox.addEventListener('change', () => {
-            cardContainers.forEach((container, i) => {
-                if (!checkboxes[i].checked) {
-                    // container.style.transform = 'translateY(1000px)'
-                    // setTimeout(function() {container.style.display = 'none'}, '1000')
-                } else {
-                    // container.style.transform = 'translateY(0px)'
-                    // setTimeout(function() {container.style.display = 'flex'}, '1000')
-                }
-            })
+    var radios = document.querySelectorAll('input[type="radio"]');
+    radios.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            changeCharacter(this)
         })
     })
+
+    function changeCharacter(radio) {
+        if (radio.id === 'char1') {
+            charImg.src = 'images/characters/Japan_Admiral.png'
+            charName.textContent = 'Naomi'
+            charDesc.textContent = 'quasong.'
+            flagImg.src = 'images/Flags/Japan.png'
+            flagName.textContent = 'Nipon Shogunate'
+        } else if (radio.id === 'char2') {
+            charImg.src = 'images/characters/King.png'
+            charName.textContent = 'Friedrich'
+            charDesc.textContent = ''
+            flagImg.src = 'images/Flags/French.png'
+            flagName.textContent = 'Republic of Scandanavia'
+        } else if (radio.id === 'char3') {
+            charImg.src = 'images/characters/German_Officer_1.png'
+            charName.textContent = 'Elster'
+            charDesc.textContent = 'Erika'
+            flagImg.src = 'images/Flags/Germany.png'
+            flagName.textContent = 'German Kaisereich'
+        } else if (radio.id === 'char4') {
+            charImg.src = 'images/characters/'
+            charName.textContent = 'Ryan'
+            charDesc.textContent = ''
+            flagImg.src = 'images/Flags/USA.png'
+            flagName.textContent = 'Commonwealth of America'
+        } else if (radio.id === 'char5') {
+            charImg.src = 'images/characters/'
+            charName.textContent = 'Argo'
+            charDesc.textContent = ''
+            flagImg.src = 'images/Flags/UK.png'
+            flagName.textContent = 'Kingdom of Britainy'
+        }
+    }
 })
