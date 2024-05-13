@@ -1,0 +1,317 @@
+/*------------------------------- Navigation Bar -------------------------------*/
+.navbar-container {
+    top: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0;
+    width: 100%;
+    height: 4.5rem;
+    background: linear-gradient(to bottom, black, transparent);
+    z-index: 10;
+}
+
+.navbar-logo img {
+    display: flex;
+    width: 8rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.btn-container a {
+    font-size: 18px;
+    color: #E1B87A;
+    transition: color 0.5s;
+}
+
+.reg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 8rem;
+    margin-right: 3rem;
+    background-color: #E1B87A;
+    transition: box-shadow 0.7s;
+}
+
+.reg-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em 0.9em;
+    border: 2px solid black;
+    transition: border-color 0.7s, color 0.7s;
+}
+
+.reg-container:hover {
+    box-shadow: 0 0 50px #E1B87A;
+}
+
+.reg-container:hover .reg-inner {
+    border-color: white;
+    color: white;
+}
+
+.mobile-nav-btn {
+    display: none;
+    margin-right: 1rem;
+}
+
+.mobile-nav-btn img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.mobile-navbar-container {
+    display: none;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    padding-top: 4.5rem;
+    border-bottom: 3px solid #E1B87A;
+    z-index: 5;
+}
+
+.mobile-navbar-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.8rem 0rem;
+    text-decoration: none;
+    color: #E1B87A;
+}
+
+.mobile-navbar-container a:active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-navbar-container .reg-container {
+    margin: 0rem 1rem;
+    width: max(30rem);
+    padding: 0rem 0.5rem;
+}
+
+.mobile-navbar-container .reg-container .reg-inner {
+    width: 100%;
+    color: black;
+}
+
+.mobile-navbar-container a:active .reg-inner {
+    border-color: white;
+    color: white;
+}
+
+.txt-highlight a:hover {
+    color: white;
+}
+
+.txt-pressed a:active {
+    color: white;
+}
+
+/*----------------------------------- Footer -----------------------------------*/
+.footer-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    height: 10rem;
+    width: 100%;
+    border-top: 3px solid #E1B87A;
+    background-color: black;
+
+    /*--- Remove Before Development ---*/
+    position: absolute;
+    bottom: 0px;
+    /*---------------------------------*/
+}
+
+.footer-content-container {
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    height: auto;
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
+
+.footer-logo img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+.footer-link-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-link-container a {
+    color: #E1B87A;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.footer-social-container {
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+    height: auto;
+    padding-right: 2rem;
+    padding-left: 4rem;
+}
+
+.footer-social-container img {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-copy-container {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E1B87A;
+}
+
+.footer-copy-container p {
+    font-size: 12px;
+    color: black;
+}
+
+/*-------------------------------- Default View --------------------------------*/
+/*--------------------------------- Isle Page ---------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather';
+    -webkit-tap-highlight-color: transparent;
+
+    /*--- Remove Before Development ---*/
+    height: 100vh;
+    /*---------------------------------*/
+}
+
+/*--------------------------------- Misc View ---------------------------------*/
+@media only screen and (max-width: 950px) {
+    /*--------- Footer ---------*/
+    .footer-logo {
+        width: 8rem;
+    }
+    
+    .footer-link-container {
+        gap: 0.5rem;
+    }
+    
+    .footer-link-container a {
+        font-size: 14px;
+    }
+    
+    .footer-social-container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .footer-social-container img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    /*--------------------------*/
+
+}
+
+/*-------------------------------- Tablet View --------------------------------*/
+@media only screen and (max-width: 820px) {
+    /*--------- Nav Bar ---------*/
+    .navbar-container {
+        background: linear-gradient(to bottom, black, transparent);
+    }
+    
+    .navbar-logo img {
+        width: 10rem;
+        margin-left: 1rem;
+    }
+    
+    .btn-container, .navbar-container .reg-container {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: flex;
+    }
+
+    .mobile-navbar-container {
+        display: flex;
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+    }
+
+    .mobile-navbar-container[data-visible="true"] {
+        transform: translateY(0%);
+    }
+    /*---------------------------*/
+    
+    /*--------- Footer ---------*/
+    .footer-container {
+        grid-template-rows: 85% 15%;
+        height: 15rem;
+    }
+    
+    .footer-content-container {
+        flex-direction: column;
+    }
+    
+    .footer-logo {
+        width: 14rem;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+    
+    .footer-link-container {
+        gap: 0.85rem;
+    }
+    
+    .footer-link-container a {
+        font-size: 13px;
+    }
+    
+    .footer-social-container {
+        width: 9rem;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    
+    .footer-social-container img {
+        width: 2rem;
+        height: 2rem;
+    }
+    /*---------------------------*/
+
+}
+
+/*-------------------------------- Phone View --------------------------------*/
+@media only screen and (max-width: 420px) {
+}
