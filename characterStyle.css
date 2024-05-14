@@ -480,10 +480,28 @@ input:checked + .char-card-container h5 {
     .char-card-container img {
         transform: translate(0, 0);
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    #Elster img {
+    #char1 img {
+        content: url('images/logo/char1.png');
+    }
+
+    #char2 img {
+        content: url('images/logo/char2.png');
+    }
+
+    #char3 img {
         content: url('images/logo/char3.png');
+    }
+
+    #char4 img {
+        content: url('images/logo/char4.png');
+    }
+
+    #char5 img {
+        content: url('images/logo/char5.png');
     }
 
     input:checked + .char-card-container img {

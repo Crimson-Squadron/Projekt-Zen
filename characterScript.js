@@ -32,31 +32,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function changeCharacter(radio) {
         if (radio.id === 'char1') {
-            charImg.src = 'images/characters/Japan_Admiral.png'
+            charImg.src = 'images/characters/Japan.png'
             charName.textContent = 'Naomi'
             charDesc.textContent = 'quasong.'
             flagImg.src = 'images/Flags/Japan.png'
             flagName.textContent = 'Nipon Shogunate'
         } else if (radio.id === 'char2') {
-            charImg.src = 'images/characters/King.png'
+            charImg.src = 'images/characters/Scandanavia.png'
             charName.textContent = 'Friedrich'
             charDesc.textContent = ''
             flagImg.src = 'images/Flags/French.png'
             flagName.textContent = 'Republic of Scandanavia'
         } else if (radio.id === 'char3') {
-            charImg.src = 'images/characters/German_Officer_1.png'
+            charImg.src = 'images/characters/German.png'
             charName.textContent = 'Elster'
             charDesc.textContent = 'Erika'
             flagImg.src = 'images/Flags/Germany.png'
             flagName.textContent = 'German Kaisereich'
         } else if (radio.id === 'char4') {
-            charImg.src = 'images/characters/'
+            charImg.src = 'images/characters/USA.png'
             charName.textContent = 'Ryan'
             charDesc.textContent = ''
             flagImg.src = 'images/Flags/USA.png'
             flagName.textContent = 'Commonwealth of America'
         } else if (radio.id === 'char5') {
-            charImg.src = 'images/characters/'
+            charImg.src = 'images/characters/British.png'
             charName.textContent = 'Argo'
             charDesc.textContent = ''
             flagImg.src = 'images/Flags/UK.png'
