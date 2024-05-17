@@ -1,3 +1,60 @@
+/*-------------------------------- Animations --------------------------------*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+
 /*------------------------------- Navigation Bar -------------------------------*/
 .navbar-container {
     top: 0px;
@@ -239,25 +296,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
-    /* background-color: beige; */
 }
 
 .char-container img {
     height: 95%;
     object-fit: cover;
-    /* background-color: blue; */
 }
 
 .char-info-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    /* background-color: chocolate; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 2rem;
     color: #E1B87A;
-    font-size: clamp(0.5rem, 0.95vw, 1.5rem);
+    font-size: clamp(0.65em, 0.95vw, 1.5rem);
 }
 
 .char-name {
@@ -277,8 +331,6 @@ body {
 }
 
 .char-nation {
-    /* aspect-ratio: 16 / 9; */
-    /* height: 10rem; */
     width: 15em;
     display: flex;
     flex-direction: column;
@@ -307,22 +359,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: nowrap; */
     gap: 1.8rem;
-    /* min-width: 0; */
     overflow: visible;
-    /* padding-top: 2rem; */
-    /* margin: 0rem 5rem; */
 }
 
 .char-card-container {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     aspect-ratio: 16 / 8;
     height: 100%;
     width: auto;
-    /* width: clamp(7rem, 15vw, 15rem); */
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     filter: grayscale(1);
