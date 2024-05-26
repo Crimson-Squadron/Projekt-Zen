@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="images/logo/Splatter 2.png">
+    <link rel="stylesheet" href="regStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bg-img">
+      <video src="videos/The World of Tyrrell _ Low Fantasy Setting - Trim.mp4" autoplay muted loop></video>
+    </div>
+    <header class="navbar-container">
+      <div class="navbar-logo">
+        <a href="home.html">
+          <img src="images/logo/Zen-dragoN-glow.png">
+        </a>
+      </div>
+      <div class="btn-container txt-highlight txt-pressed">
+        <a href="home.html">Home</a>
+        <a href="class.html">Classes</a>
+        <a href="character.html">Characters</a>
+        <a href="isle.html">Isle</a>
+      </div>
+      <a href="register.html">
+        <div class="reg-container">
+          <div class="reg-inner">REGISTER</div>
+        </div>
+      </a>
+      <div class="mobile-nav-btn" aria-controls="mobile-navbar-container" aria-expanded="false">
+        <img src="images/logo/Menu.svg" alt="Menu">
+      </div>
+    </header>
+    <header class="mobile-navbar-container" data-visible="false">
+      <a href="home.html">Home</a>
+      <a href="class.html">Classes</a>
+      <a href="character.html">Characters</a>
+      <a href="isle.html">Isle</a>
+      <a href="register.html">
+      <div class="reg-container">
+        <div class="reg-inner">REGISTER</div>
+      </div>
+      </a>
+    </header>
+    <div class="container">
+      <form action="home.html">
+        <h2>Registration</h2>
+        <div class="name-container">
+          <div class="form-group firstname">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="Enter your first name">
+          </div>
+          <div class="form-group lastname">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter your last name">
+          </div>
+        </div>
+        <div class="form-group email">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group password">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </div>
+        <div class="form-group address">
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter your address">
+        </div>
+        <div class="form-group gender">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="" selected disabled>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group submit-btn">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <footer class="footer-container">
+      <div class="footer-content-container">
+        <div class="footer-logo">
+          <img src="images/logo/Zen-dragoN-glow.png">
+        </div>
+        <div class="footer-link-container txt-highlight txt-pressed">
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Location</a>
+          <a href="">FAQ</a>
+          <a href="">About Us</a>
+        </div>
+        <div class="footer-social-container">
+          <img src="images/logo/Instagram.svg" alt="Instagram">
+          <img src="images/logo/YouTube.svg" alt="Youtube">
+          <img src="images/logo/TwitterX.svg" alt="Twitter">
+        </div>
+      </div>
+      <div class="footer-copy-container">
+        <p>©1891 Zen Group Ltd. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="regScript.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: Poppins;
+    margin: 0;
+    background-color: #010101;
+    color: #eee;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    scroll-behavior: smooth;
+}
+
+.page-first{
+    position: relative;
+    height: 100vh;
+    background-image: url(image/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.header__container {
+    position: relative;
+    isolation: isolate;
+    height: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-tagline {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.section-desc {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrows button {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.content a {
+    color: white;
+}
+  
+.content a:hover {
+    color: burlywood;
+}
+
+.slider{
+    height: 100vh;
+    position: relative;
+}
+.slider .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.slider .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .list .item .content{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+}
+.slider .list .item .content p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.slider .list .item .content h2{
+    font-size: 40px;
+    margin: 0;
+}
+.slider .list .item.active{
+    opacity: 1;
+    z-index: 10;
+}
+@keyframes showContent {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+    animation-delay: 1s;
+}
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    z-index: 11;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: auto;
+    justify-content: center;
+}
+.thumbnail::-webkit-scrollbar{
+    width: 0;
+}
+.thumbnail .item{
+    width: 100px;
+    height: 75px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item.active{
+    filter: brightness(1.5);
+}
+.thumbnail .item .content{
+    position: absolute;
+    inset: auto 10px 10px 10px;
+}
+@media screen and (max-width: 820px) {
+    .section-tagline {
+        font-size: 2rem;
+    }
+
+    .section-desc {
+        font-size: 1.2rem;
+    }
+
+    .slider .list .item .content {
+        left: 5%;
+        top: 15%;
+        width: 300px;
+    }
+
+    .slider .list .item .content h2 {
+        font-size: 24px;
+    }
+
+    .thumbnail {
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .thumbnail .item {
+        width: 60px;
+        height: 56.25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-tagline {
+        font-size: 1.5rem;
+    }
+
+    .section-desc {
+        font-size: 1rem;
+    }
+
+    .slider .list .item .content {
+        left: 3%;
+        top: 10%;
+        width: 250px;
+    }
+
+    .slider .list .item .content h2 {
+        font-size: 20px;
+    }
+
+    .thumbnail {
+        padding: 0 10px;
+        height: 50px;
+    }
+
+    .thumbnail .item {
+        width: 50px;
+        height: 46.25px;
+    }
+}

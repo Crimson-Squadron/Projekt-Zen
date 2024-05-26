@@ -282,6 +282,15 @@ body {
     opacity: 0.2;
 }
 
+.bg-img video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    opacity: 1;
+}
+
 .char-display-container {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
@@ -611,5 +620,12 @@ input:checked + .char-card-container h5 {
 
     .char-select-container {
         gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .char-display-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 7% 3.2% 61.8% 28%;
     }
 }
