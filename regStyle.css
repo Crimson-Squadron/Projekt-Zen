@@ -319,23 +319,17 @@ form select.error {
   background-color: rgba(101, 101, 101, 0.8);
 }
 
-form small {
-  font-size: 14px;
-  margin-top: 5px;
-  display: block;
-  color: #f91919;
+.error {
+  color: red;
 }
 
-form .password i {
+form .password img {
   position: absolute;
-  right: 0px;
-  height: 45px;
-  top: 28px;
-  font-size: 13px;
-  line-height: 45px;
-  width: 45px;
-  cursor: pointer;
-  color: #939393;
+  right: 8px;
+  height: 25px;
+  width: 25px;
+  top: 35px;
+  cursor: pointer;;
   text-align: center;
 }
 
@@ -473,12 +467,9 @@ form .password i {
     font-size: 14px;
   }
   
-  form .password i {
-    height: 40px;
-    top: 23px;
-    font-size: 12px;
-    line-height: 40px;
-    width: 40px;
+  form .password img {
+    width: 25px;
+    top: 33px;
   }
   
   .submit-btn input {
@@ -503,12 +494,9 @@ form .password i {
     font-size: 13px;
   }
   
-  form .password i {
-    height: 35px;
-    top: 20px;
-    font-size: 11px;
-    line-height: 35px;
-    width: 35px;
+  form .password img {
+    width: 25px;
+    top: 30px;
   }
   
   .submit-btn input {

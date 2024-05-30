@@ -46,25 +46,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(() => {
       if (radio.id === 'class1') {
-        nextSrc.src = 'images/lokasi/A cinematic view of.jpg'
-        classImg.src = 'images/logo/Academy-Emblem.png'
-        className.textContent = 'Naomi'
-        classDesc.textContent = 'A dedicated Japanese student at Zen Dragon Academy, Naomi is part of her nation\'s ground forces, driven by a desire to ensure peace and prevent the devastation caused by past dragon conflicts.'
+        nextSrc.src = 'images/lokasi/Fire-Habitat.jpg'
+        classImg.src = 'images/logo/Fire.png'
+        className.textContent = 'Fire Class'
+        classDesc.textContent = 'The fire element of dragons trained at the Zen Dragon Academy embodies fierce power and mesmerizing beauty. Their flames burn with vibrant hues, ranging from blazing reds to captivating oranges, symbolizing the raw intensity of nature. One unique aspect of this element is their precise control over the temperature of their fire, allowing them to manipulate it with incredible accuracy.'
       } else if (radio.id === 'class2') {
-        nextSrc.src = 'images/lokasi/Aska Mountain.jpg'
-        classImg.src = 'images/characters/Scandanavia.png'
-        className.textContent = 'Björn'
-        classDesc.textContent = 'The esteemed Norwegian principal of Zen Dragon Academy, Björn is a wise and experienced leader committed to fostering cooperation and understanding among students from diverse backgrounds.'
+        nextSrc.src = 'images/lokasi/Electric-Habitat.jpg'
+        classImg.src = 'images/logo/Electric.png'
+        className.textContent = 'Electric Class'
+        classDesc.textContent = 'The electric element of dragons trained at the Zen Dragon Academy embodies dynamic power and swift agility. These dragons crackle with energy, their scales often shimmering with faint sparks, showcasing their affinity with the thunderous forces of nature. Unique to this element is their ability to harness and manipulate electricity, allowing them to unleash devastating bolts of lightning with precision.'
       } else if (radio.id === 'class3') {
-        nextSrc.src = 'images/lokasi/A mighty mountain of.jpg'
-        classImg.src = 'images/characters/German.png'
-        className.textContent = 'Falke'
-        classDesc.textContent = 'A skilled German lecturer and pilot, Falke shares his extensive knowledge of aerial dragon maneuvers with students, motivated by a deep-seated commitment to preventing future wars.'
+        nextSrc.src = 'images/lokasi/Wind-Habitat.jpg'
+        classImg.src = 'images/logo/Wind.png'
+        className.textContent = 'Wind Class'
+        classDesc.textContent = 'The wind element of dragons trained at the Zen Dragon Academy epitomizes agility and freedom. Their presence is marked by swirling gusts and whispers of unseen currents, embodying the ethereal essence of the skies. One notable trait of this element is their mastery over air currents, allowing them to move with unparalleled speed and grace both in flight and on land.'
       } else if (radio.id === 'class4') {
-        nextSrc.src = 'images/lokasi/Svartkuk Kingdom-1.png'
-        classImg.src = 'images/characters/USA.png'
-        className.textContent = 'Maverick'
-        classDesc.textContent = 'An adventurous American student and pilot at the academy, Maverick thrives on the thrill of dragon flight and seeks to master their use for innovative and peaceful applications.'
+        nextSrc.src = 'images/lokasi/Water-Habitat.jpg'
+        classImg.src = 'images/logo/Water.png'
+        className.textContent = 'Water Class'
+        classDesc.textContent = 'The water element of dragons trained at the Zen Dragon Academy embodies fluidity and grace. One unique aspect of this element is their ability to manipulate moisture in the air, creating dense fogs or freezing mist to disorient opponents.'
       }
 
       classImg.classList.remove('fade-out')
