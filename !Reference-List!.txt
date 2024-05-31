@@ -1,3 +1,11 @@
+Notes:
+-Some web effects used require a modern version of web browsers.
+-it may take some time to load the assets, especially videos.
+-Most of the Figma pages uses on enter and after delay animations, so if a page looks empty, try to reload the page or navigate to a different page then back again.
+-keep the cursor near the bottom of the screen and don't scroll to fast for the best expirience when viewing the Figma pages.
+-If the Figma page appears too big, try fit width or fit 100%.
+
+References:
 https://fonts.google.com/specimen/Merriweather
 
 https://www.figma.com/community/plugin/740272380439725040/material-design-icons
