@@ -513,6 +513,7 @@ input:checked + .class-btn-container {
 @media only screen and (max-width: 570px) {
     .class-display-container {
         grid-template-rows: 10% 6% 44% 5% 35%;
+        margin-bottom: 20vh;
     }
 
     .class-info-container {
