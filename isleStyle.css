@@ -385,6 +385,8 @@ a {
     z-index: 1;
     color: white;
     text-shadow: 0px 0px 15px black;
+    /* -webkit-text-stroke-width: 0.3px; */
+    /* -webkit-text-stroke-color: black; */
 }
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
